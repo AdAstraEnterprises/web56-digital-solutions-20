@@ -11,7 +11,7 @@ const AboutSection = ({ currentLang }: AboutSectionProps) => {
     de: {
       title: 'Über Web56',
       subtitle: 'Universität Koblenz trifft Praxis',
-      description: 'Web56 wurde von zwei Absolventen der Universität Koblenz gegründet. Wir kombinieren wirtschaftliches Denken mit technischer Kompetenz und entwickeln individuelle digitale Lösungen – effizient, schnell und persönlich.',
+      description: 'Web56 wurde von Absolventen der Universität Koblenz gegründet. Wir kombinieren wirtschaftliches Denken mit technischer Kompetenz und entwickeln individuelle digitale Lösungen – effizient, schnell und persönlich.',
       vision: 'Unsere Vision ist es, Unternehmen jeder Größe dabei zu helfen, ihre digitale Präsenz zu optimieren und nachhaltiges Wachstum zu erzielen.',
       features: [
         {
@@ -39,7 +39,7 @@ const AboutSection = ({ currentLang }: AboutSectionProps) => {
     en: {
       title: 'About Web56',
       subtitle: 'University of Koblenz meets practice',
-      description: 'Web56 was founded by two graduates of the University of Koblenz. We combine economic thinking with technical competence and develop individual digital solutions – efficiently, quickly and personally.',
+      description: 'Web56 was founded by graduates of the University of Koblenz. We combine economic thinking with technical competence and develop individual digital solutions – efficiently, quickly and personally.',
       vision: 'Our vision is to help companies of all sizes optimize their digital presence and achieve sustainable growth.',
       features: [
         {
