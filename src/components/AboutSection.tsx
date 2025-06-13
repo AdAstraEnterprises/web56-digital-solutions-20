@@ -1,0 +1,144 @@
+
+import React from 'react';
+import { MapPin, GraduationCap, Users, TrendingUp } from 'lucide-react';
+
+interface AboutSectionProps {
+  currentLang: 'de' | 'en';
+}
+
+const AboutSection = ({ currentLang }: AboutSectionProps) => {
+  const content = {
+    de: {
+      title: 'Über Web56',
+      subtitle: 'Universität Koblenz trifft Praxis',
+      description: 'Web56 wurde von zwei Absolventen der Universität Koblenz gegründet. Wir kombinieren wirtschaftliches Denken mit technischer Kompetenz und entwickeln individuelle digitale Lösungen – effizient, schnell und persönlich.',
+      vision: 'Unsere Vision ist es, Unternehmen jeder Größe dabei zu helfen, ihre digitale Präsenz zu optimieren und nachhaltiges Wachstum zu erzielen.',
+      features: [
+        {
+          icon: MapPin,
+          title: 'Standort Koblenz',
+          description: 'Verwurzelt in der Region, digital global vernetzt'
+        },
+        {
+          icon: GraduationCap,
+          title: 'Universitäre Exzellenz',
+          description: 'Fundierte Ausbildung trifft auf praktische Erfahrung'
+        },
+        {
+          icon: Users,
+          title: 'Persönlicher Kontakt',
+          description: 'Direkter Draht zu den Entwicklern und Gründern'
+        },
+        {
+          icon: TrendingUp,
+          title: 'Kontinuierliche Weiterentwicklung',
+          description: 'Immer auf dem neuesten Stand der Technik'
+        }
+      ]
+    },
+    en: {
+      title: 'About Web56',
+      subtitle: 'University of Koblenz meets practice',
+      description: 'Web56 was founded by two graduates of the University of Koblenz. We combine economic thinking with technical competence and develop individual digital solutions – efficiently, quickly and personally.',
+      vision: 'Our vision is to help companies of all sizes optimize their digital presence and achieve sustainable growth.',
+      features: [
+        {
+          icon: MapPin,
+          title: 'Based in Koblenz',
+          description: 'Rooted in the region, digitally connected globally'
+        },
+        {
+          icon: GraduationCap,
+          title: 'University Excellence',
+          description: 'Solid education meets practical experience'
+        },
+        {
+          icon: Users,
+          title: 'Personal Contact',
+          description: 'Direct line to developers and founders'
+        },
+        {
+          icon: TrendingUp,
+          title: 'Continuous Development',
+          description: 'Always up to date with the latest technology'
+        }
+      ]
+    }
+  };
+
+  const t = content[currentLang];
+
+  return (
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+            {t.title}
+          </h2>
+          <p className="text-xl text-blue-800 font-medium mb-8">
+            {t.subtitle}
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
+            {t.description}
+          </p>
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
+            {t.vision}
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {t.features.map((feature, index) => (
+            <div key={index} className="text-center group">
+              <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition-colors">
+                <feature.icon className="h-8 w-8 text-blue-800" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 lg:p-12">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                {currentLang === 'de' ? 'Warum Web56?' : 'Why Web56?'}
+              </h3>
+              <ul className="space-y-3 text-lg text-gray-700">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-800 rounded-full mr-3"></div>
+                  {currentLang === 'de' ? 'Besonders schnelle Umsetzung' : 'Exceptionally fast implementation'}
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-800 rounded-full mr-3"></div>
+                  {currentLang === 'de' ? 'KI-gestützte Effizienz' : 'AI-supported efficiency'}
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-800 rounded-full mr-3"></div>
+                  {currentLang === 'de' ? 'Modernste Technologie' : 'Latest technology'}
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-800 rounded-full mr-3"></div>
+                  {currentLang === 'de' ? 'Faire und transparente Preise' : 'Fair and transparent pricing'}
+                </li>
+              </ul>
+            </div>
+            <div className="aspect-[4/3] bg-white rounded-xl shadow-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=450&fit=crop"
+                alt="Team working"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
