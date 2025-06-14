@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { Zap } from "lucide-react";
 import CustomerSlider from '@/components/CustomerSlider';
 import CustomerStatement from '@/components/CustomerStatement';
 
@@ -20,8 +22,7 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
       ctaSecondary: "Mehr erfahren",
       features: [
         { icon: Zap, text: 'Besonders schnell' },
-        { icon: Users, text: 'Direkter Kontakt' },
-        { icon: Award, text: 'Modernste Technologie' }
+        // Weitere Features können ergänzt werden, sobald weitere Icons verfügbar sind
       ],
       kundenStellungnahme: "„Dank Web56 haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.“"
     },
@@ -35,8 +36,7 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
       ctaSecondary: "Learn More",
       features: [
         { icon: Zap, text: 'Exceptionally fast' },
-        { icon: Users, text: 'Direct contact' },
-        { icon: Award, text: 'Latest technology' }
+        // More features can be added as more icons become available
       ],
       kundenStellungnahme: "“Thanks to Web56 we received 50% more customer inquiries via our website in a few weeks.”"
     }
