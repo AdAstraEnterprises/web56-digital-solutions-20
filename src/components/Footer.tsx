@@ -1,70 +1,76 @@
 
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import Logo from './Logo';
+import React from "react";
+import { Mail, Phone, MapPin, ShieldCheck, Flag, Smile } from "lucide-react";
+import Logo from "./Logo";
 
 interface FooterProps {
-  currentLang: 'de' | 'en';
+  currentLang: "de" | "en";
 }
 
 const Footer = ({ currentLang }: FooterProps) => {
   const content = {
     de: {
-      services: 'Leistungen',
-      company: 'Unternehmen',
-      legal: 'Rechtliches',
-      contact: 'Kontakt',
+      services: "Leistungen",
+      company: "Unternehmen",
+      legal: "Rechtliches",
+      contact: "Kontakt",
       servicesList: [
-        'Webdesign',
-        'SEO-Optimierung',
-        'Performance',
-        'Automatisierung',
-        'Wartung & Support'
+        "Webdesign",
+        "SEO-Optimierung",
+        "Performance",
+        "Automatisierung",
+        "Wartung & Support",
       ],
-      companyList: [
-        'Über uns',
-        'Team',
-        'Karriere',
-        'Blog',
-        'Portfolio'
+      companyList: ["Über uns", "Team", "Karriere", "Blog", "Portfolio"],
+      legalList: ["Impressum", "Datenschutz", "AGB", "Cookie-Richtlinie"],
+      copyright: "© 2024 Web56. Alle Rechte vorbehalten.",
+      madeWith: "Entwickelt mit ❤️ in Koblenz",
+      seals: [
+        {
+          icon: ShieldCheck,
+          label: "DSGVO-konform",
+        },
+        {
+          icon: Flag,
+          label: "Made in Germany",
+        },
+        {
+          icon: Smile,
+          label: "100 % Zufriedenheitsgarantie",
+        },
       ],
-      legalList: [
-        'Impressum',
-        'Datenschutz',
-        'AGB',
-        'Cookie-Richtlinie'
-      ],
-      copyright: '© 2024 Web56. Alle Rechte vorbehalten.',
-      madeWith: 'Entwickelt mit ❤️ in Koblenz'
     },
     en: {
-      services: 'Services',
-      company: 'Company',
-      legal: 'Legal',
-      contact: 'Contact',
+      services: "Services",
+      company: "Company",
+      legal: "Legal",
+      contact: "Contact",
       servicesList: [
-        'Web Design',
-        'SEO Optimization',
-        'Performance',
-        'Automation',
-        'Maintenance & Support'
+        "Web Design",
+        "SEO Optimization",
+        "Performance",
+        "Automation",
+        "Maintenance & Support",
       ],
-      companyList: [
-        'About Us',
-        'Team',
-        'Careers',
-        'Blog',
-        'Portfolio'
+      companyList: ["About Us", "Team", "Careers", "Blog", "Portfolio"],
+      legalList: ["Imprint", "Privacy Policy", "Terms of Service", "Cookie Policy"],
+      copyright: "© 2024 Web56. All rights reserved.",
+      madeWith: "Made with ❤️ in Koblenz",
+      seals: [
+        {
+          icon: ShieldCheck,
+          label: "GDPR compliant",
+        },
+        {
+          icon: Flag,
+          label: "Made in Germany",
+        },
+        {
+          icon: Smile,
+          label: "100% Satisfaction Guarantee",
+        },
       ],
-      legalList: [
-        'Imprint',
-        'Privacy Policy',
-        'Terms of Service',
-        'Cookie Policy'
-      ],
-      copyright: '© 2024 Web56. All rights reserved.',
-      madeWith: 'Made with ❤️ in Koblenz'
-    }
+    },
   };
 
   const t = content[currentLang];
@@ -79,10 +85,9 @@ const Footer = ({ currentLang }: FooterProps) => {
               <Logo className="h-10 w-auto" />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              {currentLang === 'de'
-                ? 'Web56 entwickelt moderne, effiziente Webseiten und digitale Lösungen. Von Absolventen der Universität Koblenz für Unternehmen, die vorankommen wollen.'
-                : 'Web56 develops modern, efficient websites and digital solutions. By graduates of the University of Koblenz for companies that want to move forward.'
-              }
+              {currentLang === "de"
+                ? "Web56 entwickelt moderne, effiziente Webseiten und digitale Lösungen. Von Absolventen der Universität Koblenz für Unternehmen, die vorankommen wollen."
+                : "Web56 develops modern, efficient websites and digital solutions. By graduates of the University of Koblenz for companies that want to move forward."}
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
@@ -97,6 +102,15 @@ const Footer = ({ currentLang }: FooterProps) => {
                 <MapPin className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-300">Koblenz, Deutschland</span>
               </div>
+            </div>
+            {/* TRUST/Siegel Elemente */}
+            <div className="flex flex-wrap gap-3 mt-8">
+              {t.seals.map((seal, idx) => (
+                <div key={idx} className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-md">
+                  <seal.icon className="w-5 h-5 text-blue-200" />
+                  <span className="text-blue-100 text-sm font-medium">{seal.label}</span>
+                </div>
+              ))}
             </div>
           </div>
 

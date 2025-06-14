@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Zap, Users, Award } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import CustomerSlider from '@/components/CustomerSlider';
+import CustomerStatement from '@/components/CustomerStatement';
 
 interface HeroSectionProps {
   currentLang: 'de' | 'en';
@@ -10,28 +11,34 @@ interface HeroSectionProps {
 const HeroSection = ({ currentLang }: HeroSectionProps) => {
   const content = {
     de: {
-      headline: 'Digital sichtbar. Elegant. Effektiv.',
-      subheadline: 'Moderne Webseiten und digitale Lösungen für Unternehmen, die vorankommen wollen.',
-      description: 'Web56 entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.',
-      cta: 'Kostenlose Beratung',
-      ctaSecondary: 'Mehr erfahren',
+      headline:
+        "Mehr Kunden durch moderne Webseiten. Sichtbar. Schnell. Persönlich.",
+      subheadline: "Moderne Webseiten und digitale Lösungen für Unternehmen, die vorankommen wollen.",
+      description:
+        "Web56 entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.",
+      cta: "Kostenlose Beratung",
+      ctaSecondary: "Mehr erfahren",
       features: [
         { icon: Zap, text: 'Besonders schnell' },
         { icon: Users, text: 'Direkter Kontakt' },
         { icon: Award, text: 'Modernste Technologie' }
-      ]
+      ],
+      kundenStellungnahme: "„Dank Web56 haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.“"
     },
     en: {
-      headline: 'Digitally visible. Elegant. Effective.',
-      subheadline: 'Modern websites and digital solutions for companies that want to move forward.',
-      description: 'Web56 develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.',
-      cta: 'Free Consultation',
-      ctaSecondary: 'Learn More',
+      headline:
+        "More customers with modern websites. Visible. Fast. Personal.",
+      subheadline: "Modern websites and digital solutions for companies that want to move forward.",
+      description:
+        "Web56 develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.",
+      cta: "Free Consultation",
+      ctaSecondary: "Learn More",
       features: [
         { icon: Zap, text: 'Exceptionally fast' },
         { icon: Users, text: 'Direct contact' },
         { icon: Award, text: 'Latest technology' }
-      ]
+      ],
+      kundenStellungnahme: "“Thanks to Web56 we received 50% more customer inquiries via our website in a few weeks.”"
     }
   };
 
@@ -55,13 +62,27 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-blue-800 hover:bg-blue-900 text-lg px-8 py-4">
+              <Button
+                size="lg"
+                className="bg-blue-800 hover:bg-blue-900 text-lg px-8 py-4 rounded-md text-white flex items-center"
+                variant="default"
+              >
                 {t.cta}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-blue-800 text-blue-800 hover:bg-blue-50">
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-blue-800 hover:bg-blue-900 text-lg px-8 py-4 rounded-md text-white flex items-center"
+              >
                 {t.ctaSecondary}
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+            </div>
+
+            <div className="w-full pt-4">
+              <CustomerSlider />
+              <CustomerStatement />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 pt-8">
@@ -86,7 +107,9 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="text-2xl font-bold text-blue-800">350+</div>
-              <div className="text-gray-600">{currentLang === 'de' ? 'Zufriedene Kunden' : 'Happy Clients'}</div>
+              <div className="text-gray-600">
+                {currentLang === "de" ? "Zufriedene Kunden" : "Happy Clients"}
+              </div>
             </div>
           </div>
         </div>
