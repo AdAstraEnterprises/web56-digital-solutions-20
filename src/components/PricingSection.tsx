@@ -44,7 +44,7 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
       packages: [
         {
           name: "Starter",
-          price: "349",
+          price: "999",
           description: "Perfekt für kleine Unternehmen und Selbstständige",
           features: [
             "Onepager Website",
@@ -58,7 +58,7 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
         },
         {
           name: "Professional",
-          price: "599",
+          price: "1799",
           description: "Ideal für wachsende Unternehmen",
           features: [
             "Mehrseitige Website",
@@ -73,13 +73,14 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
         },
         {
           name: "Business+",
-          price: "999",
+          price: "7999",
           description: "Komplettlösung für anspruchsvolle Projekte",
           features: [
             "Alles aus Professional",
             "KI-gestützte Inhalte",
             "Automatisierung",
             "E-Commerce Integration",
+            "Social Media Marketing",
             "Analytics Setup",
             "Individuelle Beratung",
             "6 Monate Wartung",
@@ -98,7 +99,7 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
       packages: [
         {
           name: "Starter",
-          price: "349",
+          price: "999",
           description: "Perfect for small businesses and freelancers",
           features: [
             "One-page website",
@@ -112,7 +113,7 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
         },
         {
           name: "Professional",
-          price: "599",
+          price: "1799",
           description: "Ideal for growing businesses",
           features: [
             "Multi-page website",
@@ -127,13 +128,14 @@ const PricingSection = ({ currentLang }: PricingSectionProps) => {
         },
         {
           name: "Business+",
-          price: "999",
+          price: "7999",
           description: "Complete solution for demanding projects",
           features: [
             "Everything from Professional",
             "AI-powered content",
             "Automation",
             "E-commerce integration",
+            "Social media marketing",
             "Analytics setup",
             "Individual consulting",
             "6 months maintenance",
