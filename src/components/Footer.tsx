@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Mail, Phone, MapPin, ShieldCheck, Flag, Smile } from "lucide-react";
 import Logo from "./Logo";
@@ -23,7 +22,7 @@ const Footer = ({ currentLang }: FooterProps) => {
       ],
       companyList: ["Über uns", "Team", "Karriere", "Blog", "Portfolio"],
       legalList: ["Impressum", "Datenschutz", "AGB", "Cookie-Richtlinie"],
-      copyright: "© 2024 Web56. Alle Rechte vorbehalten.",
+      copyright: "© 2024 Ad Astra. Alle Rechte vorbehalten.",
       madeWith: "Entwickelt mit ❤️ in Koblenz",
       seals: [
         {
@@ -54,7 +53,7 @@ const Footer = ({ currentLang }: FooterProps) => {
       ],
       companyList: ["About Us", "Team", "Careers", "Blog", "Portfolio"],
       legalList: ["Imprint", "Privacy Policy", "Terms of Service", "Cookie Policy"],
-      copyright: "© 2024 Web56. All rights reserved.",
+      copyright: "© 2024 Ad Astra. All rights reserved.",
       madeWith: "Made with ❤️ in Koblenz",
       seals: [
         {
@@ -86,13 +85,13 @@ const Footer = ({ currentLang }: FooterProps) => {
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               {currentLang === "de"
-                ? "Web56 entwickelt moderne, effiziente Webseiten und digitale Lösungen. Von Absolventen der Universität Koblenz für Unternehmen, die vorankommen wollen."
-                : "Web56 develops modern, efficient websites and digital solutions. By graduates of the University of Koblenz for companies that want to move forward."}
+                ? "Ad Astra entwickelt moderne, effiziente Webseiten und digitale Lösungen. Von Absolventen der Universität Koblenz für Unternehmen, die vorankommen wollen."
+                : "Ad Astra develops modern, efficient websites and digital solutions. By graduates of the University of Koblenz for companies that want to move forward."}
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">info@web56.de</span>
+                <span className="text-gray-300">info@adastra.de</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-blue-400" />

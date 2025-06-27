@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, GraduationCap, Users, TrendingUp } from 'lucide-react';
 
@@ -9,9 +8,9 @@ interface AboutSectionProps {
 const AboutSection = ({ currentLang }: AboutSectionProps) => {
   const content = {
     de: {
-      title: 'Über Web56',
+      title: 'Über Ad Astra',
       subtitle: 'Universität Koblenz trifft Praxis',
-      description: 'Web56 wurde von Absolventen der Universität Koblenz gegründet. Wir kombinieren wirtschaftliches Denken mit technischer Kompetenz und entwickeln individuelle digitale Lösungen – effizient, schnell und persönlich.',
+      description: 'Ad Astra wurde von Absolventen der Universität Koblenz gegründet. Wir kombinieren wirtschaftliches Denken mit technischer Kompetenz und entwickeln individuelle digitale Lösungen – effizient, schnell und persönlich.',
       vision: 'Unsere Vision ist es, Unternehmen jeder Größe dabei zu helfen, ihre digitale Präsenz zu optimieren und nachhaltiges Wachstum zu erzielen.',
       features: [
         {
@@ -37,9 +36,9 @@ const AboutSection = ({ currentLang }: AboutSectionProps) => {
       ]
     },
     en: {
-      title: 'About Web56',
+      title: 'About Ad Astra',
       subtitle: 'University of Koblenz meets practice',
-      description: 'Web56 was founded by graduates of the University of Koblenz. We combine economic thinking with technical competence and develop individual digital solutions – efficiently, quickly and personally.',
+      description: 'Ad Astra was founded by graduates of the University of Koblenz. We combine economic thinking with technical competence and develop individual digital solutions – efficiently, quickly and personally.',
       vision: 'Our vision is to help companies of all sizes optimize their digital presence and achieve sustainable growth.',
       features: [
         {
@@ -106,7 +105,7 @@ const AboutSection = ({ currentLang }: AboutSectionProps) => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                {currentLang === 'de' ? 'Warum Web56?' : 'Why Web56?'}
+                {currentLang === 'de' ? 'Warum Ad Astra?' : 'Why Ad Astra?'}
               </h3>
               <ul className="space-y-3 text-lg text-gray-700">
                 <li className="flex items-center">

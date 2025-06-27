@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,28 +16,28 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
         "Mehr Kunden durch moderne Webseiten. Sichtbar. Schnell. Persönlich.",
       subheadline: "Moderne Webseiten und digitale Lösungen für Unternehmen, die vorankommen wollen.",
       description:
-        "Web56 entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.",
+        "Ad Astra entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.",
       cta: "Kostenlose Beratung",
       ctaSecondary: "Mehr erfahren",
       features: [
         { icon: Zap, text: 'Besonders schnell' },
         // Weitere Features können ergänzt werden, sobald weitere Icons verfügbar sind
       ],
-      kundenStellungnahme: "„Dank Web56 haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.“"
+      kundenStellungnahme: "„Dank Ad Astra haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.“"
     },
     en: {
       headline:
         "More customers with modern websites. Visible. Fast. Personal.",
       subheadline: "Modern websites and digital solutions for companies that want to move forward.",
       description:
-        "Web56 develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.",
+        "Ad Astra develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.",
       cta: "Free Consultation",
       ctaSecondary: "Learn More",
       features: [
         { icon: Zap, text: 'Exceptionally fast' },
         // More features can be added as more icons become available
       ],
-      kundenStellungnahme: "“Thanks to Web56 we received 50% more customer inquiries via our website in a few weeks.”"
+      kundenStellungnahme: "“Thanks to Ad Astra we received 50% more customer inquiries via our website in a few weeks.”"
     }
   };
 
