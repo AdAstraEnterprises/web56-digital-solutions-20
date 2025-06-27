@@ -13,30 +13,24 @@ interface HeroSectionProps {
 const HeroSection = ({ currentLang }: HeroSectionProps) => {
   const content = {
     de: {
-      headline:
-        "Mehr Kunden durch moderne Webseiten. Sichtbar. Schnell. Persönlich.",
+      headline: "Mehr Kunden durch moderne Webseiten. Sichtbar. Schnell. Persönlich.",
       subheadline: "Moderne Webseiten und digitale Lösungen für Unternehmen, die vorankommen wollen.",
-      description:
-        "Ad Astra entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.",
+      description: "Ad Astra entwickelt professionelle Online-Präsenzen mit modernster Technologie. Schnell, effizient und persönlich – von Absolventen der Universität Koblenz.",
       cta: "Kostenlose Beratung",
       ctaSecondary: "Mehr erfahren",
       features: [
         { icon: Zap, text: 'Besonders schnell' },
-        // Weitere Features können ergänzt werden, sobald weitere Icons verfügbar sind
       ],
       kundenStellungnahme: "„Dank Ad Astra haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.""
     },
     en: {
-      headline:
-        "More customers with modern websites. Visible. Fast. Personal.",
+      headline: "More customers with modern websites. Visible. Fast. Personal.",
       subheadline: "Modern websites and digital solutions for companies that want to move forward.",
-      description:
-        "Ad Astra develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.",
+      description: "Ad Astra develops professional online presences with cutting-edge technology. Fast, efficient and personal – by graduates of the University of Koblenz.",
       cta: "Free Consultation",
       ctaSecondary: "Learn More",
       features: [
         { icon: Zap, text: 'Exceptionally fast' },
-        // More features can be added as more icons become available
       ],
       kundenStellungnahme: ""Thanks to Ad Astra we received 50% more customer inquiries via our website in a few weeks.""
     }
