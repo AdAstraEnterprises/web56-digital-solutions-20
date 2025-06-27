@@ -21,7 +21,7 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
       features: [
         { icon: Zap, text: 'Besonders schnell' },
       ],
-      kundenStellungnahme: "„Dank Ad Astra haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten.""
+      kundenStellungnahme: "Dank Ad Astra haben wir in wenigen Wochen 50 % mehr Kundenanfragen über unsere Webseite erhalten."
     },
     en: {
       headline: "More customers with modern websites. Visible. Fast. Personal.",
@@ -32,7 +32,7 @@ const HeroSection = ({ currentLang }: HeroSectionProps) => {
       features: [
         { icon: Zap, text: 'Exceptionally fast' },
       ],
-      kundenStellungnahme: ""Thanks to Ad Astra we received 50% more customer inquiries via our website in a few weeks.""
+      kundenStellungnahme: "Thanks to Ad Astra we received 50% more customer inquiries via our website in a few weeks."
     }
   };
 
